@@ -5,7 +5,7 @@ let level = 0;
 
 //Add Event Listener to button A in keyboard tostart the game
 $(document).keypress(function(event){
-    if((event.key == "a" || event.key == "A")){
+    if((event.key == "a" || event.key == "A") && level==0){
         let randomNumber = nextSequence();
         let randomChosenColor = buttonColors[randomNumber];
         gamePattern.push(randomChosenColor);
